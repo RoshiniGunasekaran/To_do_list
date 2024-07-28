@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ADD8E6;
+  background-image: linear-gradient(to bottom, #ADD8E6, #87CEEB);
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #F0F8FF;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hi {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #4682B4;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 15px;
+  border-bottom: 2px solid #4682B4;
+  font-size: 20px;
+  color: #333;
+  background-color: #F0F8FF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-bottom: 2px solid #4682B4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.add {
+  background-color: #4682B4;
+  padding: 1rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add:hover {
+  background-color: #4682B4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+  position: relative;
+  margin-top: 1rem;
+  background-color: #F0F8FF;
+  color: #333;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #4682B4;
+}
+
+.icon:hover {
+  color: #4682B4;
+}
+
+/* Additional styles */
+
+.todo-done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-done .icons {
+  opacity: 0.5;
+}
+
+.todo-done .icon {
+  cursor: not-allowed;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+  }
+  input {
+    width: 100%;
+  }
+}
